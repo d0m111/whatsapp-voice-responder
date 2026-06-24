@@ -1,0 +1,54 @@
+﻿party/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+party/
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Project Data
+data/recordings/
+data/transcripts/
+data/output/
+*.wav
+*.ogg
+*.mp3
+
+# Node.js
+node_modules/
+npm-debug.log*
+package-lock.json
+yarn-debug.log*
+yarn-error.log*
+
+# WhatsApp sessions
+whatsapp-bot/sessions/
+
+# Environment variables
+.env
+*.local.yaml
+
+# Logs
+*.log
+logs/
+
+# OS
+Thumbs.db

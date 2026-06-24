@@ -1,0 +1,63 @@
+@"
+paths:
+  recordings_dir: "data/recordings"
+  transcripts_dir: "data/transcripts"
+  output_dir: "data/output"
+  models_dir: "data/models"
+  whisper_dir: "data/whisper"
+  whisper_model: "ggml-base.bin"
+  processed_log: "data/processed_audio.json"
+  personality_bank: "data/personality_bank.json"
+  osc_config: "config/osc_config.json"
+
+osc:
+  ip: "127.0.0.1"
+  port: 4441
+
+voices:
+  reader:
+    name: "Reader"
+    speaker_wav: "reader.wav"
+    speed: 1.0
+    folder: "reader"
+    default_personality: "You read messages aloud clearly."
+  
+  him:
+    name: "Him"
+    speaker_wav: "fran.wav"
+    speed: 1.0
+    folder: "him"
+    default_personality: "You are a sarcastic observer with dry wit. Keep responses VERY short - 1-2 sentences maximum."
+  
+  girl1:
+    name: "Girl1"
+    speaker_wav: "camille.wav"
+    speed: 1.0
+    folder: "girl1"
+    default_personality: "You are a poetic woman who sees beauty in everything."
+  
+  girl2:
+    name: "Girl2"
+    speaker_wav: "giovanna.wav"
+    speed: 1.0
+    folder: "girl2"
+    default_personality: "You are a passionate woman who feels everything intensely."
+
+voice_mode:
+  default: "random"
+  fixed_voice: "him"
+
+openai:
+  model: "gpt-3.5-turbo"
+  max_tokens: 50
+  temperature: 0.9
+
+audio:
+  sample_rate: 16000
+  playback_sample_rate: 22050
+  channels: 1
+
+tts:
+  model: "tts_models/multilingual/multi-dataset/xtts_v2"
+  language: "en"
+"@ | Out-File -FilePath config\config.yaml -Encoding utf8
